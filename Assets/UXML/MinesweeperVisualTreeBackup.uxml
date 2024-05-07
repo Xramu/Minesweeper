@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/MinesweeperStyle.uss?fileID=7433441132597879392&amp;guid=0242ecd93b8726743ae9875572b8ea1d&amp;type=3#MinesweeperStyle" />
+    <engine:VisualElement name="MainContainer" style="flex-grow: 1; justify-content: space-around; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px;">
+        <engine:VisualElement name="CenterContainer" style="align-self: auto;">
+            <engine:VisualElement name="HeaderContainer" class="uiSquare" style="flex-grow: 1;">
+                <engine:Label text="Minesweeper" name="Header" class="header" />
+            </engine:VisualElement>
+            <engine:VisualElement name="GameContainerBackground" class="uiSquare">
+                <engine:VisualElement name="GameContainer" class="uiSquareReversed" style="margin-top: 50px; margin-bottom: 50px; align-self: center; flex-direction: column; flex-wrap: nowrap;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,124 @@
+Label {
+    color: rgb(103, 103, 103);
+}
+
+Button {
+    color: rgb(103, 103, 103);
+}
+
+.uiSquare {
+    background-image: url("project://database/Assets/Sprites/UI_Square.png?fileID=2800000&guid=eac4bec94f2444048a16d8196c38679d&type=3#UI_Square");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-scale: 6px;
+}
+
+.header {
+    -unity-text-align: upper-center;
+    font-size: 32px;
+    -unity-font-style: bold;
+}
+
+.defaultField {
+    background-image: url("project://database/Assets/Sprites/UI_Square.png?fileID=2800000&guid=eac4bec94f2444048a16d8196c38679d&type=3#UI_Square");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-scale: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+
+.searchedField {
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-scale: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+
+.uiSquareReversed {
+    background-image: url("project://database/Assets/Sprites/UI_Square_Reversed.png?fileID=2800000&guid=7c7ca4df98f32cd4dba88715b9d72e4e&type=3#UI_Square_Reversed");
+    -unity-slice-left: 1;
+    -unity-slice-top: 1;
+    -unity-slice-right: 1;
+    -unity-slice-bottom: 1;
+    -unity-slice-scale: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+
+.fieldRow {
+    flex-direction: row;
+}
+
+.minedField {
+    -unity-background-image-tint-color: rgb(255, 0, 0);
+}
+
+.mineAmount1 {
+    color: rgb(27, 27, 255);
+}
+
+.mineAmount2 {
+    color: rgb(27, 204, 27);
+}
+
+.mineAmount3 {
+    color: rgb(255, 27, 27);
+}
+
+.mineAmount4 {
+    color: rgb(27, 27, 128);
+}
+
+.mineAmount5 {
+    color: rgb(128, 27, 27);
+}
+
+.mineAmount6 {
+    color: rgb(27, 128, 128);
+}
+
+.mineAmount7 {
+    color: rgb(0, 0, 0);
+}
+
+.mineAmount8 {
+    color: rgb(128, 128, 128);
+}
+
+.fieldLabel {
+    width: 100%;
+    height: 100%;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-image: url("project://database/Assets/Sprites/Flag.png?fileID=2800000&guid=d5829f45f4b0f1746a98cd9e15587c7d&type=3#Flag");
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0);
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.flaggedField {
+    background-image: url("project://database/Assets/Sprites/Flag.png?fileID=2800000&guid=d5829f45f4b0f1746a98cd9e15587c7d&type=3#Flag");
+    display: flex;
+    -unity-background-scale-mode: scale-to-fit;
+}

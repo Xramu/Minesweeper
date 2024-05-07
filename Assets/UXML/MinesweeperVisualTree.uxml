@@ -1,0 +1,35 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/MinesweeperStyle.uss?fileID=7433441132597879392&amp;guid=0242ecd93b8726743ae9875572b8ea1d&amp;type=3#MinesweeperStyle" />
+    <engine:VisualElement name="MainContainer" style="flex-grow: 1; justify-content: space-around; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px;">
+        <engine:VisualElement name="CenterContainer" style="align-self: auto;">
+            <engine:VisualElement name="HeaderContainer" class="uiSquare" style="flex-grow: 1;">
+                <engine:Label text="Minesweeper" name="Header" class="header" />
+            </engine:VisualElement>
+            <engine:VisualElement name="GameContainerBackground" class="uiSquare">
+                <engine:VisualElement name="MenuContainer" style="flex-grow: 1; margin-top: 50px; margin-bottom: 50px; margin-right: 50px; margin-left: 50px;">
+                    <engine:VisualElement name="MenuRows" class="uiSquareReversed" style="flex-grow: 1; flex-direction: row; justify-content: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 31px; padding-right: 31px; padding-bottom: 31px; padding-left: 31px;">
+                        <engine:VisualElement name="ValuesColumn" style="flex-grow: 1; align-items: center; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px;">
+                            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: flex-end; align-items: flex-start;">
+                                <engine:IntegerField label="Game Size X" value="10" name="IntFieldGameX" />
+                            </engine:VisualElement>
+                            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: flex-end; align-items: flex-start;">
+                                <engine:IntegerField label="Game Size Y" value="10" name="IntFieldGameY" />
+                            </engine:VisualElement>
+                            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: flex-end; align-items: flex-start;">
+                                <engine:IntegerField label="Mines" value="15" name="IntFieldMines" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="PresetsColumn" style="flex-grow: 1; align-items: stretch; margin-right: 25px; margin-left: 25px; margin-top: 25px; margin-bottom: 25px;" />
+                    </engine:VisualElement>
+                    <engine:Button text="Start Game" name="StartGameButton" style="align-self: center; margin-top: 50px; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="GameContainer" style="align-self: center; flex-direction: column; flex-wrap: nowrap; margin-top: 10px; margin-bottom: 10px; display: none;">
+                    <engine:VisualElement name="GameBorder" class="uiSquareReversed" style="flex-grow: 1;">
+                        <MinesweeperGame minefield-max-height-pixels="600" />
+                    </engine:VisualElement>
+                    <engine:Button text="End Game" name="EndGameButton" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
